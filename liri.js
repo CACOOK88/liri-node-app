@@ -8,7 +8,6 @@ const spotify = new spotifyPackage({
 const axios = require('axios')
 const moment = require('moment')
 const fs = require('fs')
-
 const command = process.argv[2]
 let search = process.argv.slice(3).join(' ')
 
@@ -106,10 +105,11 @@ function whatItSays(search) {
     if ( error ) {
       return console.log(error)
     }
-    console.log(data);
+    let arg = data.split(',')[1]
+    song(arg)
   })
 }
 
 function noCommand() {
-
+  console.log(`Please enter a command`)
 }
