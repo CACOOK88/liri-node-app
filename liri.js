@@ -34,14 +34,23 @@ function concert(search) {
     axios
       .get("https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp")
       .then(function(res) {
-        for ( let i = 0; i < 10; i++ ) {
-          // console log the info for each event
+        let length = res.data.length
+        console.log(length)
+        if(length > 10) {
+          length = 10
+        }
+        console.log(length)
+        for ( let i = 0; i < length; i++ ) {
+          console.log('==============================================')
+          console.log( "Concert Venue: " + res.data[i].venue.name )
+          console.log( "Location: " + res.data[i].venue.city + ", " + res.data[i].venue.region )
+          console.log( moment(res.data[i].datetime).format('MM-DD-YYYY') )
         }
 
         // console.log( res.data[0])
-        console.log( res.data[0].venue.name )
-        console.log( res.data[0].venue.city + ", " + res.data[0].venue.region )
-        console.log( moment(res.data[0].datetime).format('MM-DD-YYYY') )
+        // console.log( res.data[0].venue.name )
+        // console.log( res.data[0].venue.city + ", " + res.data[0].venue.region )
+        // console.log( moment(res.data[0].datetime).format('MM-DD-YYYY') )
       })
   } else {
     console.log('You did not search for anything')
