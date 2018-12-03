@@ -3,10 +3,10 @@
 This Liri app takes commands and arguments to run though the associated APIs to return information requested.
 
 Accepted Commands:
-concert-this - Enter a musical artist after this command to search [Concert](images/liriDefaultAndConcert.png)
-spotify-this-song - Enter the name of a song to search [Spotify](images/liriSpotify.png)
-movie-this - Enter the name of a movie to search [Movie](images/liriMovie.png)
-do-what-it-says - no arguments needed. [Do What It Says](images/liriDoWhatItSays.png)
+concert-this - Enter a musical artist after this command to search [Concert](Screenshots/liriDefaultAndConcert.png)
+spotify-this-song - Enter the name of a song to search [Spotify](Screenshots/liriSpotify.png)
+movie-this - Enter the name of a movie to search [Movie](Screenshots/liriMovie.png)
+do-what-it-says - no arguments needed. [Do What It Says](Screenshots/liriDoWhatItSays.png)
 
 Each command that takes arguments after the command will input those into string format to the API to search and return information. No need to wrap in quotes.
 
