@@ -1,5 +1,7 @@
 # liri-node-app
 
+UNCC Coding Bootcamp week 10 Node.js homework
+
 This Liri app takes commands and arguments in the command line. It takes this information and runs the associated code to return information to the command line.
 
 Accepted Commands:
