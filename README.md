@@ -1,6 +1,6 @@
 # liri-node-app
 
-This Liri app takes commands and arguments to run though the associated APIs to return information requested.
+This Liri app takes commands and arguments in the command line. It takes this information and runs the associated code to return information to the command line.
 
 Accepted Commands:
 
